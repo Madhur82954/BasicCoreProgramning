@@ -6,7 +6,7 @@ namespace BasicCoreProgramning
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter option \n1) Flip Coin\n2) Leap Year");
+            Console.WriteLine("Enter option \n1) Flip Coin\n2) Leap Year\n3)Power of 2");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -18,6 +18,11 @@ namespace BasicCoreProgramning
                 case 2:
                     LeapYear leap = new LeapYear();
                     leap.checkleapyear();
+                    break;
+
+                case 3:
+                    PowerOf2 power = new PowerOf2();
+                    power.CalculatePowerOf2();
                     break;
             }
         }
