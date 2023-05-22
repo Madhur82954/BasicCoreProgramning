@@ -6,7 +6,7 @@ namespace BasicCoreProgramning
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter option \n1) Flip Coin\n2) Leap Year\n3)Power of 2\n4)Harmonic Number");
+            Console.WriteLine("Enter option \n1) Flip Coin\n2) Leap Year\n3)Power of 2\n4)Harmonic Number\n5)Prime Factors");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -28,6 +28,11 @@ namespace BasicCoreProgramning
                 case 4:
                     HarmonicNumber harmonic = new HarmonicNumber();
                     harmonic.CalculateHarmonicNumber();
+                    break;
+
+                case 5:
+                    PrimeFactors prime = new PrimeFactors();
+                    prime.CheckPrimeFactors();
                     break;
             }
         }
