@@ -6,7 +6,7 @@ namespace BasicCoreProgramning
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter option \n1) Flip Coin\n2) Leap Year\n3) Power of 2\n4) Harmonic Number\n5) Prime Factors\n6) Quotient Remainder\n7) Swap Two Numbers");
+            Console.WriteLine("Enter option \n1) Flip Coin\n2) Leap Year\n3) Power of 2\n4) Harmonic Number\n5) Prime Factors\n6) Quotient Remainder\n7) Swap Two Numbers\n8) Even Odd");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -43,6 +43,11 @@ namespace BasicCoreProgramning
                 case 7:
                     SwapTwoNumbers swap = new SwapTwoNumbers();
                     swap.CheckSwapTwoNumbers();
+                    break;
+
+                case 8:
+                    EvenOdd even = new EvenOdd();
+                    even.CheckEvenOdd();
                     break;
             }
         }
